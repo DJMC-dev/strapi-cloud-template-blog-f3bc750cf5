@@ -1,0 +1,46 @@
+{
+  "collectionName": "components_molecules_infos",
+  "info": {
+    "displayName": "Info",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "component",
+      "repeatable": false,
+      "component": "atoms.heading"
+    },
+    "description": {
+      "type": "component",
+      "repeatable": false,
+      "component": "atoms.text"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "atoms.button"
+    },
+    "media": {
+      "type": "component",
+      "repeatable": false,
+      "component": "atoms.image"
+    },
+    "background": {
+      "type": "enumeration",
+      "enum": [
+        "Blanco",
+        "Blue-gray"
+      ]
+    },
+    "alignment": {
+      "type": "enumeration",
+      "enum": [
+        "left",
+        "right",
+        "top",
+        "bottom"
+      ]
+    }
+  }
+}

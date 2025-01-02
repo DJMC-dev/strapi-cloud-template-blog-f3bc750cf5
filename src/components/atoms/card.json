@@ -1,0 +1,43 @@
+{
+  "collectionName": "components_atoms_card",
+  "info": {
+    "displayName": "card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "component",
+      "repeatable": false,
+      "component": "atoms.text"
+    },
+    "description": {
+      "type": "component",
+      "repeatable": false,
+      "component": "atoms.text"
+    },
+    "author": {
+      "type": "component",
+      "repeatable": false,
+      "component": "atoms.text"
+    },
+    "readingTime": {
+      "type": "component",
+      "repeatable": false,
+      "component": "atoms.text"
+    },
+    "url": {
+      "type": "component",
+      "repeatable": false,
+      "component": "atoms.button"
+    },
+    "media": {
+      "type": "component",
+      "repeatable": false,
+      "component": "atoms.image"
+    },
+    "publishDate": {
+      "type": "date"
+    }
+  }
+}

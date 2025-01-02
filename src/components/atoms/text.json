@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_atoms_texts",
+  "info": {
+    "displayName": "Text"
+  },
+  "options": {},
+  "attributes": {
+    "value": {
+      "type": "richtext"
+    },
+    "variant": {
+      "type": "enumeration",
+      "enum": [
+        "Body 1",
+        "Body 2",
+        "Disclaimer"
+      ]
+    },
+    "alignment": {
+      "type": "enumeration",
+      "enum": [
+        "left",
+        "center",
+        "right"
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_atoms_images",
+  "info": {
+    "displayName": "Media",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "value": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
+    },
+    "fullWidth": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

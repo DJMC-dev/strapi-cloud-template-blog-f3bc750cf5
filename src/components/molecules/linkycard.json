@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_molecules_linkycards",
+  "info": {
+    "displayName": "linkycard",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "component",
+      "repeatable": false,
+      "component": "atoms.heading"
+    },
+    "cards": {
+      "displayName": "cards",
+      "type": "component",
+      "repeatable": true,
+      "component": "atoms.card",
+      "max": 3,
+      "min": 3
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_atoms_buttons",
+  "info": {
+    "displayName": "Button"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "variant": {
+      "type": "enumeration",
+      "enum": [
+        "Primary",
+        "Secondary",
+        "Tertiary"
+      ]
+    },
+    "size": {
+      "type": "enumeration",
+      "enum": [
+        "Normal",
+        "Medium",
+        "Small"
+      ]
+    },
+    "alignment": {
+      "type": "enumeration",
+      "enum": [
+        "left",
+        "center",
+        "right"
+      ]
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}
