@@ -1,7 +1,8 @@
 {
   "collectionName": "components_atoms_buttons",
   "info": {
-    "displayName": "Button"
+    "displayName": "Button",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -11,9 +12,9 @@
     "variant": {
       "type": "enumeration",
       "enum": [
-        "Primary",
-        "Secondary",
-        "Tertiary"
+        "primary",
+        "secondary",
+        "tertiary"
       ]
     },
     "size": {
@@ -34,6 +35,17 @@
     },
     "url": {
       "type": "string"
+    },
+    "actionType": {
+      "type": "enumeration",
+      "enum": [
+        "url",
+        "mailto",
+        "tel"
+      ]
+    },
+    "openInNewTab": {
+      "type": "boolean"
     }
   }
 }
