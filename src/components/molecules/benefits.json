@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_molecules_benefits",
+  "info": {
+    "displayName": "benefits"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "component",
+      "repeatable": false,
+      "component": "atoms.heading"
+    },
+    "subTitle": {
+      "type": "component",
+      "repeatable": false,
+      "component": "atoms.text"
+    },
+    "benefitCard": {
+      "displayName": "benefitCard",
+      "type": "component",
+      "repeatable": true,
+      "component": "atoms.benefit"
+    }
+  }
+}
