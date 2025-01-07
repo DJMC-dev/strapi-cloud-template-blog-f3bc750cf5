@@ -429,7 +429,6 @@ export interface ApiArticleArticle extends Struct.CollectionTypeSchema {
       'api::article.article'
     > &
       Schema.Attribute.Private;
-    plans: Schema.Attribute.Relation<'manyToMany', 'api::plan.plan'>;
     publishedAt: Schema.Attribute.DateTime;
     slug: Schema.Attribute.UID<'title'>;
     title: Schema.Attribute.String;
@@ -529,6 +528,7 @@ export interface ApiCoverageCoverage extends Struct.CollectionTypeSchema {
     name: Schema.Attribute.String &
       Schema.Attribute.Required &
       Schema.Attribute.DefaultTo<'Empty'>;
+    plan: Schema.Attribute.Relation<'manyToMany', 'api::plan.plan'>;
     publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -592,6 +592,7 @@ export interface ApiPagePage extends Struct.CollectionTypeSchema {
     publishedAt: Schema.Attribute.DateTime;
     segment: Schema.Attribute.Enumeration<['cuentas']>;
     slug: Schema.Attribute.UID;
+    tables: Schema.Attribute.Component<'molecules.table', true>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -610,14 +611,15 @@ export interface ApiPlanPlan extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
-    coverages: Schema.Attribute.Relation<'manyToMany', 'api::article.article'>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    identifier: Schema.Attribute.UID;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::plan.plan'> &
       Schema.Attribute.Private;
     name: Schema.Attribute.String;
+    plans: Schema.Attribute.Relation<'manyToMany', 'api::coverage.coverage'>;
     publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &

@@ -15,11 +15,14 @@
     "name": {
       "type": "string"
     },
-    "coverages": {
+    "identifier": {
+      "type": "uid"
+    },
+    "plans": {
       "type": "relation",
       "relation": "manyToMany",
-      "target": "api::article.article",
-      "inversedBy": "plans"
+      "target": "api::coverage.coverage",
+      "mappedBy": "plan"
     }
   }
 }

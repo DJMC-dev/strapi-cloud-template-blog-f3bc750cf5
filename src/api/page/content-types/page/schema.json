@@ -28,6 +28,11 @@
         "molecules.info",
         "molecules.linkycard"
       ]
+    },
+    "tables": {
+      "type": "component",
+      "repeatable": true,
+      "component": "molecules.table"
     }
   }
 }
