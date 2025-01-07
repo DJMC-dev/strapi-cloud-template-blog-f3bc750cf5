@@ -20,12 +20,7 @@
       "type": "component",
       "repeatable": false,
       "component": "atoms.text"
-    },
-    "plans": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::plan.plan"
-    },
+    },  
     "showSubtitle": {
       "type": "boolean",
       "required": true
