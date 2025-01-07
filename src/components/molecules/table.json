@@ -1,0 +1,44 @@
+{
+  "collectionName": "components_molecules_tables",
+  "info": {
+    "displayName": "Table",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "component",
+      "repeatable": false,
+      "component": "atoms.heading"
+    },
+    "subTitle": {
+      "type": "component",
+      "repeatable": false,
+      "component": "atoms.text"
+    },
+    "tableHeaderTitle": {
+      "type": "component",
+      "repeatable": false,
+      "component": "atoms.text"
+    },
+    "plans": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::plan.plan"
+    },
+    "showSubtitle": {
+      "type": "boolean",
+      "required": true
+    },
+    "showTitle": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "showTableHeaderTitle": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    }
+  }
+}

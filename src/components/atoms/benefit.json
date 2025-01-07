@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_atoms_benefits",
+  "info": {
+    "displayName": "benefitCard",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "component",
+      "repeatable": false,
+      "component": "atoms.image"
+    },
+    "Title": {
+      "type": "component",
+      "repeatable": false,
+      "component": "atoms.heading"
+    },
+    "Description": {
+      "type": "component",
+      "repeatable": false,
+      "component": "atoms.text"
+    }
+  }
+}
